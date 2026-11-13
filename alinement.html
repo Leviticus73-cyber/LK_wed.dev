@@ -30,11 +30,15 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-
             }
+            #drag{
+                width: 300px;
+            }
+            
         </style>
     </head>
     <body>
+        <img onmouseover=""  src="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg" alt="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg" id="drag">
 <h1>aline Notes</h1>
 <div id="box-wraper">
     <div id="box" onmouseover="disapear()" onmouseout="appear()">
@@ -73,7 +77,6 @@
         let newcolor = document.getElementById ("colorpicker").value
         document.getElementById ("box").style.backgroundColor = newcolor
     }
-
     function disapear(){
         document.getElementById
         ("box2").style.display = 'none'
@@ -83,13 +86,12 @@
         ("box2").style.display = 'block'
     }
     function show(){
-        let element = document.getElementById("flex-wrapper")
-        if (element.style.display =="flex"){
-        element.style.display="none"}
-        }else{
-            element.style.display =="flex"
-        }
-    
+        let element = donument.getElementById("box")
+        
+    }
+    function image(){
+        let images = ["https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg","https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", "https://img.magnific.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80", "https://ichef.bbci.co.uk/ace/standard/3840/cpsprodpb/33b5/live/78d8d060-21ce-11f0-89a9-cb5ed9bbefd9.jpg"]
+
     }
 </script>
 </div>
