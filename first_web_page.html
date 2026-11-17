@@ -38,6 +38,9 @@
             #right{
                 float: right;
             }
+            #showed{
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -50,7 +53,7 @@
     <hr>
     <h2 id="1">Some Of The Characters</h2>
         <div id="ed">
-    <img src="https://assets.byub.org/images/af86470b-23a0-48d0-b65f-352da4d603fc/1920xauto.webp" alt="Biffels">
+    <img src="https://assets.byub.org/images/af86470b-23a0-48d0-b65f-352da4d603fc/1920xauto.webp" alt="Biffels" id="cat" onmouseout="changeimage()">
     <br>
     <a href="https://www.byutv.org/643c9cdb-9d99-42f1-bca4-658a699a3aa4/biffels">byutv.org</a>
         </div>
@@ -78,5 +81,40 @@
     <br>
 
     <a href="#top">go back to the top of the page</a>
+    <br>
+    <br>
+    <button id="showMore" onclick="show()">Show More</button>
+    <div id="showed">
+        <div id="ed">
+        <img src="" alt="">
+        <br>
+        <a href="">byutv.org</a>
+        </div>
+        <p>
+
+        </p>
+    </div>
     </body>
+    <script>
+            //MAKES IT INTERACTIVE
+            let images = ["https://assets.byub.org/images/af86470b-23a0-48d0-b65f-352da4d603fc/1920xauto.webp", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUw3nsnhiB0Zz6vlawRslFrV0tzA8rNfrMb4CzdF6tEw&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-AyXzXJ_gn1GwAdpYM_1XNBqrij_PsAKMVmhs_hA9A&s=10"]
+            let current = 0
+            function changeimage(){
+                current += 1
+                if (current > 2){
+                    current = 0
+                }
+                document.getElementById("cat").src = images[current]
+            }
+            function show(){
+                let element = document.getElementById("showed")
+                if (element.style.display == "flex"){
+                    element.style.display = "none"
+                    document.getElementById("showMore").innerHTML = "Show More"
+                }else{
+                    element.style.display = "flex"
+                    document.getElementById("showMore").innerHTML = "Show Less"
+                }
+            }
+    </script>
 </html>
