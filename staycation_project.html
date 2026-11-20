@@ -7,7 +7,7 @@
             body{
                 background-color: rosybrown;
             }
-            h1, h3{
+            h1, h3, h2{
                 text-align: center;
                 color: rgb(100, 25, 25);
             }
@@ -25,6 +25,10 @@
                 flex-direction: row;
                 justify-content: space-around;
             }
+            #showed{
+                display: none;
+            }
+
         </style>
     </head>
     <body>
@@ -41,5 +45,45 @@
             <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/courthouse-towers.htm">Courthouse Towers<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTP5L6fiDM_CiNXixFHscpgooAvBRH-H0h7VWAFxwBCA&s" alt="Courthouse Towers"></a><br><a id="smaller" href="https://www.flickr.com/photos/129867116@N08/31199387337/">flickr</a></div>
             <div id="pla"><a href="https://www.nps.gov/places/sand-dune-arch-trail.htm">Sand Dune Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Dw5H0Ox9n7sHBqnDwdYHitYeTCjMnnT2W3qrvpODBQ&s" alt="Sand Dune Arch"></a><br><a id="smaller" href="https://www.rawpixel.com/image/4033840/founders-day-sal-mountains-viewpoint">rawpixel</a></div>
         </Div>
+        <button id="showMore" onclick="show()">Show More</button>
+    <div id="showed">
+        <div id="ed">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjB9I-aQkC9J3dDEC8a5jrvmP5bGPwf_qC-cEYOZhyg&s=10" alt="Rocks" id="cat" onmouseout="changeimage()">
+        <br>
+        <a href="https://greg-willis.com/2017/colonnade-arch/">greg-willis.com,</a>
+        <a href="https://www.rawpixel.com/image/433879/free-photo-image-arches-national-park-tourism-american-desert">rawpixel,</a>
+        <a href="https://www.flickr.com/photos/jsjgeology/16132364255">flickr</a>
+        </div>
+            <h3>The Fees</h3>
+
+            <ul>
+                <li>Normal Fee is 30$ per private vehicle for 7 days and 15 people.</li>
+                <li>Motorcycle Fee is $25 for 7 days</li>
+                <li>Individual fee is</li>
+            </ul>
+    </div>
     </body>
+     <script>
+            //MAKES IT INTERACTIVE
+            let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjB9I-aQkC9J3dDEC8a5jrvmP5bGPwf_qC-cEYOZhyg&s=10", "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTEyNDU4NTF1LmpwZw.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZozEWVDQvbGdOsdGmy9ofl_Zf73vdq2W3AIpIDyAAZgVtEMfuAhLJiQ1&s=10"]
+            let current = 0
+            function changeimage(){
+                current += 1
+                if (current > 2){
+                    current = 0
+                }
+                document.getElementById("cat").src = images[current]
+            }
+            function show(){
+                let element = document.getElementById("showed")
+                if (element.style.display == "flex"){
+                    element.style.display = "none"
+                    document.getElementById("showMore").innerHTML = "Show More"
+                }else{
+                    element.style.display = "flex"
+
+                    document.getElementById("showMore").innerHTML = "Show Less"
+                }
+            }
+    </script>
 </html>
