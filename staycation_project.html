@@ -13,23 +13,25 @@
             }
             #pla{
                 border: solid 3px;
-                float: left;
                 background-color: rgb(177, 100, 100);
+                width: 13.5%;
+                height: 13.5%;
             }
-            img{
-                width: 350px;
-                height: 350px;
+            #cat{
+                width: 450px;
+                height: 450px;
             }
             #pl{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                font-size: 79%;
             }
             #showed{
                 display: none;
                 border:solid 3px;
                 background-color: rgba(165, 42, 42, 0.479);
-                width: 600px;
+                width: 700px;
             }
             #9{
                 display: flex;
@@ -43,6 +45,10 @@
                 display: flex;
                 justify-content: space-around;
             }
+            #ch{
+                 width: 100%;
+                height: 100%;
+            }
         </style>
     </head>
     <body>
@@ -51,14 +57,15 @@
         <h3>Places you should go in Arches</h3>
         <Div id="pl">
             
-            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/delicate-arch.htm">Delicate Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFWxBcLHB51WE7zfhRBPpoi9yV7niUeTynuRQthNDEw&s=10" alt="Delicate Arch"></a><br><a id="smaller" href="https://commons.wikimedia.org/wiki/File:Delicate_Arch_%28Arches_National_Park,_eastern_Utah,_USA%29_1_%2815512662583%29.jpg">File:Delicate Arch</a></div>
-            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/the-windows.htm">The Windows Section<br><img src="https://www.nps.gov/common/uploads/cropped_image/primary/43725AF4-AA62-AA78-38FC71CE242A65F6.jpg?width=1600&quality=90&mode=crop" alt="The Windows Section"></a><br><a id="smaller" href="https://www.nps.gov/places/the-windows-section-trailhead.htm">The Windows Viewpoint</a></div>
-            <div id="pla"><a href="https://www.nps.gov/places/double-arch.htm">Double Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwWe6EwcJ7NMv0jV4Zd06jtnMCkgr1MJmwsAlraMbiHw&s=10" alt="Double Arch"></a><br><a id="smaller" href="https://commons.wikimedia.org/wiki/File:Double_Arch_Arches_National_Park_2.jpg">File:Double Arch</a></div>
-            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm">Devils Garden<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY8Q5cNKiNXMQvtz9hy8G-sCQKbvyiw9eH2DYzjFTpw&s=10" alt="Devils Garden"></a><br><a id="smaller" href="https://commons.wikimedia.org/wiki/File:Black_Arch,_Devils_Garden,_Arches_National_Park,_Utah_%289099694543%29.jpg">File:Black Arch, Devils Garden</a></div>
-            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/balancedrock.htm">Balanced Rock<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYrKnCp0BXOhQKtkyv1fm1rKvjLgmpM6f2U9pVLkW_w&s=10" alt="Balanced Rock"></a><br><a id="smaller" href="https://www.flickr.com/photos/kenlund/68897860">flickr</a></div>
-            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/courthouse-towers.htm">Courthouse Towers<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTP5L6fiDM_CiNXixFHscpgooAvBRH-H0h7VWAFxwBCA&s" alt="Courthouse Towers"></a><br><a id="smaller" href="https://www.flickr.com/photos/129867116@N08/31199387337/">flickr</a></div>
-            <div id="pla"><a href="https://www.nps.gov/places/sand-dune-arch-trail.htm">Sand Dune Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Dw5H0Ox9n7sHBqnDwdYHitYeTCjMnnT2W3qrvpODBQ&s" alt="Sand Dune Arch"></a><br><a id="smaller" href="https://www.rawpixel.com/image/4033840/founders-day-sal-mountains-viewpoint">rawpixel</a></div>
+            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/delicate-arch.htm">Delicate Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFWxBcLHB51WE7zfhRBPpoi9yV7niUeTynuRQthNDEw&s=10" alt="Delicate Arch" id="ch"></a><br><a id="smaller" href="https://commons.wikimedia.org/wiki/File:Delicate_Arch_%28Arches_National_Park,_eastern_Utah,_USA%29_1_%2815512662583%29.jpg">File:Delicate Arch</a></div>
+            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/the-windows.htm">The Windows Section<br><img src="https://www.nps.gov/common/uploads/cropped_image/primary/43725AF4-AA62-AA78-38FC71CE242A65F6.jpg?width=1600&quality=90&mode=crop" alt="The Windows Section" id="ch"></a><br><a id="smaller" href="https://www.nps.gov/places/the-windows-section-trailhead.htm">The Windows Viewpoint</a></div>
+            <div id="pla"><a href="https://www.nps.gov/places/double-arch.htm">Double Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwWe6EwcJ7NMv0jV4Zd06jtnMCkgr1MJmwsAlraMbiHw&s=10" alt="Double Arch" id="ch"></a><br><a id="smaller" href="https://commons.wikimedia.org/wiki/File:Double_Arch_Arches_National_Park_2.jpg">File:Double Arch</a></div>
+            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/devils-garden.htm">Devils Garden<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY8Q5cNKiNXMQvtz9hy8G-sCQKbvyiw9eH2DYzjFTpw&s=10" alt="Devils Garden" id="ch"></a><br><a id="smaller" href="https://commons.wikimedia.org/wiki/File:Black_Arch,_Devils_Garden,_Arches_National_Park,_Utah_%289099694543%29.jpg">File:Black Arch, Devils Garden</a></div>
+            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/balancedrock.htm">Balanced Rock<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYrKnCp0BXOhQKtkyv1fm1rKvjLgmpM6f2U9pVLkW_w&s=10" alt="Balanced Rock" id="ch"></a><br><a id="smaller" href="https://www.flickr.com/photos/kenlund/68897860">flickr</a></div>
+            <div id="pla"><a href="https://www.nps.gov/arch/planyourvisit/courthouse-towers.htm">Courthouse Towers<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTP5L6fiDM_CiNXixFHscpgooAvBRH-H0h7VWAFxwBCA&s" alt="Courthouse Towers" id="ch"></a><br><a id="smaller" href="https://www.flickr.com/photos/129867116@N08/31199387337/">flickr</a></div>
+            <div id="pla"><a href="https://www.nps.gov/places/sand-dune-arch-trail.htm">Sand Dune Arch<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Dw5H0Ox9n7sHBqnDwdYHitYeTCjMnnT2W3qrvpODBQ&s" alt="Sand Dune Arch" id="ch"></a><br><a id="smaller" href="https://www.rawpixel.com/image/4033840/founders-day-sal-mountains-viewpoint">rawpixel</a></div>
         </Div>
+    
         <button id="showMore" onclick="show()">Show More</button>
     <div id="showed">
         <div id="ed">
@@ -75,6 +82,7 @@
                 <li>Normal Fee is 30$ per private vehicle for 7 days</li>
                 <li>Motorcycle Fee is 25$ for 7 days</li>
                 <li>Individual fee is 15$ for 7 days</li>
+                <li>Annual Passes are 55$ for one year</li>
             </ul>
             <br>
             <a id="q" href="https://www.nps.gov/arch/planyourvisit/fees.htm">more information</a>
